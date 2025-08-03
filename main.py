@@ -82,7 +82,8 @@ heading.grid(row=0, column=1)
 
 # Creating a canvas
 canvas = Canvas(width=250, height=250, bg=YELLOW, highlightthickness=0)
-bg_img = PhotoImage(file="tomato.png")
+img_path = '/Users/chukw/PycharmProjects/Pomodoro/tomato.png'
+bg_img = PhotoImage(file=img_path)
 canvas.create_image(125, 125, image=bg_img) # x, y, PhotoImage
 timer_text = canvas.create_text(125, 135, text="00:00", fill="white", font=(FONT_NAME, 25, "bold")) # x, y, text
 canvas.grid(row=1, column=1)
